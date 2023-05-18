@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS Array Sort</title>
+</head>
+<body>
+    <h2>JavaScript Array Sort</h2>
+
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo"></p>
+
+<footer><a href="https://www.w3schools.com/js/js_array_sort.asp">source</a></footer>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo").innerHTML = points;
+}
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+</body>
+</html>
+
+
+
+
+// 🏁🏁 Asynchronous JavaScript
+
+// 6️⃣: Synchronous JavaScript Prog
+const fun2 = () => {
+    console.log(`function 2️⃣ is called`);
+}
